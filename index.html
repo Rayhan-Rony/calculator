@@ -6,114 +6,121 @@
     <title>Rony's Calculator</title>
     <!-- tailwind css cdn  -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      .s {
+        box-shadow: 0px 0px 10px 10px #fff;
+      }
+    </style>
   </head>
-  <body class="bg-gray-300 flex justify-center items-center min-h-screen">
+  <body class="bg-slate-200 flex justify-center items-center min-h-screen">
     <main class="">
-      <h1 class="text-2xl font-extrabold text-lime-500">Calculator</h1>
+      <h1 class="text-4xl font-extrabold text-blue-600 text-center mb-6">
+        Calculator
+      </h1>
 
-      <section class="bg-white grid grid-cols-4 text-lime-400 p-3 gap-3">
-        <div class="col-span-4 bg-orange-500 text-right text-xl p-4 rounded-xl">
-          0
+      <section
+        class="bg-slate-100 grid grid-cols-4 text-blue-500 font-semibold px-3 py-5 gap-3 rounded-lg s"
+      >
+        <div class="col-span-4 text-right text-xl p-4 rounded-xl">0</div>
+        <div class="key cursor-pointer">
+          <p class="bg-white rounded-full p-3 keyText-1">Ac</p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-1">Ac</p>
-        </div>
-        <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-2 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-2 flex justify-center">
             DEL
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-3 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-3 flex justify-center">
             %
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-4 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-4 flex justify-center">
             /
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-5 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-5 flex justify-center">
             7
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-6 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-6 flex justify-center">
             8
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-7 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-7 flex justify-center">
             9
           </p>
         </div>
         <div class="key cursor-pointer">
           <p
-            class="bg-red-200 rounded-full p-3 keyText-8 flex justify-center flex justify-center"
+            class="bg-white rounded-full p-3 keyText-8 flex justify-center flex justify-center"
           >
             *
           </p>
         </div>
         <div class="key cursor-pointer">
           <p
-            class="bg-red-200 rounded-full p-3 keyText-9 flex justify-center flex justify-center"
+            class="bg-white rounded-full p-3 keyText-9 flex justify-center flex justify-center"
           >
             4
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-10 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-10 flex justify-center">
             5
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-11 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-11 flex justify-center">
             6
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-12 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-12 flex justify-center">
             -
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-13 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-13 flex justify-center">
             1
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-14 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-14 flex justify-center">
             2
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-15 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-15 flex justify-center">
             3
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-16 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-16 flex justify-center">
             +
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-17 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-17 flex justify-center">
             00
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-18 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-18 flex justify-center">
             0
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-19 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-19 flex justify-center">
             .
           </p>
         </div>
         <div class="key cursor-pointer">
-          <p class="bg-red-200 rounded-full p-3 keyText-20 flex justify-center">
+          <p class="bg-white rounded-full p-3 keyText-20 flex justify-center">
             =
           </p>
         </div>
